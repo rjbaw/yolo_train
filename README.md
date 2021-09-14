@@ -3,6 +3,7 @@
 `https://www.dropbox.com/sh/u5c86zbemh7mz3v/AABPm4dVrzIse1WYf71WQIUQa?dl=0`
 ## Setup
 `git clone https://github.com/ezvk7740/yolo_train.git`
+`mkdir weights`
 ### Dataset Configuration
 Create empty configuration files
 ```
@@ -27,9 +28,8 @@ ${CLASS_NAMES}
 ```
 #### Dataset arrangement
 Rename dataset files  
-`python data/rename.py --data ${DATASET_NAME}`
+`python data/rename.py --data ${DATASET_NAME}`  
 Proportion dataset files  
-`python data/proportion.py --data ${DATASET_NAME} --proportion ${TRAIN_PROPORTION}`
+`python data/proportion.py --data ${DATASET_NAME} --proportion ${TRAIN_PROPORTION}`  
 ## Running
 `python train.py`
-
