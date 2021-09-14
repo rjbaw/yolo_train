@@ -1,0 +1,6 @@
+classes=1
+train=data/egg_tray/train
+valid=data/egg_tray/val
+names=data/egg_tray.names
+backup=backup/
+eval=egg_tray
